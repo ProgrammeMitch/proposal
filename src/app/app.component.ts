@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { AgGridAngular } from 'ag-grid-angular';
-import { CellClickedEvent, ColDef } from 'ag-grid-community';
+import { ColDef } from 'ag-grid-community';
 
 @Component({
   selector: 'app-root',
@@ -26,9 +26,9 @@ export class AppComponent {
     sortable: true, filter: true
   }
 
-  onCellClicked( event: CellClickedEvent){
-    console.log(event);
-  }
+  // onCellClicked( event: CellClickedEvent){
+  //   console.log(event);
+  // }
 
   clearSelection() {
     this.agGrid.api.selectAll();
